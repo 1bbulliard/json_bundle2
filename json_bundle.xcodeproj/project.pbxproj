@@ -13,6 +13,11 @@
 		DF75D3112741BF9000BDF746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75D2FF2741BF8F00BDF746 /* ContentView.swift */; };
 		DF75D3122741BF9000BDF746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75D3002741BF9000BDF746 /* Assets.xcassets */; };
 		DF75D3132741BF9000BDF746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75D3002741BF9000BDF746 /* Assets.xcassets */; };
+		DF75D31F2741BFDB00BDF746 /* json_bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75D31E2741BFDB00BDF746 /* json_bundle.swift */; };
+		DF75D3252742226000BDF746 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DF75D3242742225F00BDF746 /* data.json */; };
+		DF75D3262742226000BDF746 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DF75D3242742225F00BDF746 /* data.json */; };
+		DFF445362743041D00F230A3 /* user2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF445352743041D00F230A3 /* user2.swift */; };
+		DFF445372743041D00F230A3 /* user2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF445352743041D00F230A3 /* user2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,9 @@
 		DF75D3052741BF9000BDF746 /* json_bundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json_bundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF75D30B2741BF9000BDF746 /* json_bundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json_bundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF75D30D2741BF9000BDF746 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DF75D31E2741BFDB00BDF746 /* json_bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json_bundle.swift; sourceTree = "<group>"; };
+		DF75D3242742225F00BDF746 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DFF445352743041D00F230A3 /* user2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,13 @@
 		DF75D2F82741BF8F00BDF746 = {
 			isa = PBXGroup;
 			children = (
+				DF75D2FF2741BF8F00BDF746 /* ContentView.swift */,
+				DF75D3242742225F00BDF746 /* data.json */,
+				DFF445352743041D00F230A3 /* user2.swift */,
+				DF75D2FE2741BF8F00BDF746 /* json_bundleApp.swift */,
+				DF75D3202741C01400BDF746 /* data */,
+				DF75D31D2741BFA700BDF746 /* model */,
+				DF75D31C2741BF9E00BDF746 /* views */,
 				DF75D2FD2741BF8F00BDF746 /* Shared */,
 				DF75D30C2741BF9000BDF746 /* macOS */,
 				DF75D3062741BF9000BDF746 /* Products */,
@@ -54,8 +69,6 @@
 		DF75D2FD2741BF8F00BDF746 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DF75D2FE2741BF8F00BDF746 /* json_bundleApp.swift */,
-				DF75D2FF2741BF8F00BDF746 /* ContentView.swift */,
 				DF75D3002741BF9000BDF746 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +89,28 @@
 				DF75D30D2741BF9000BDF746 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		DF75D31C2741BF9E00BDF746 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DF75D31D2741BFA700BDF746 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DF75D31E2741BFDB00BDF746 /* json_bundle.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DF75D3202741C01400BDF746 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF75D3122741BF9000BDF746 /* Assets.xcassets in Resources */,
+				DF75D3252742226000BDF746 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF75D3132741BF9000BDF746 /* Assets.xcassets in Resources */,
+				DF75D3262742226000BDF746 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +215,8 @@
 			files = (
 				DF75D3102741BF9000BDF746 /* ContentView.swift in Sources */,
 				DF75D30E2741BF9000BDF746 /* json_bundleApp.swift in Sources */,
+				DF75D31F2741BFDB00BDF746 /* json_bundle.swift in Sources */,
+				DFF445362743041D00F230A3 /* user2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF445372743041D00F230A3 /* user2.swift in Sources */,
 				DF75D3112741BF9000BDF746 /* ContentView.swift in Sources */,
 				DF75D30F2741BF9000BDF746 /* json_bundleApp.swift in Sources */,
 			);
@@ -244,6 +284,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,6 +339,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
