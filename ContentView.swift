@@ -103,7 +103,7 @@ struct nextview2: View {
         
             .font(.callout)
             .fontWeight(.bold)
-            .padding(60.0)
+            .padding(5.0)
            .background(.green)
         
         
@@ -136,8 +136,8 @@ struct nextview3: View {
         
             .font(.callout)
             .fontWeight(.bold)
-            .padding(60.0)
-            .background(.yellow)
+            .padding(5.0)
+            .background(.green)
        
     }
 }
@@ -155,8 +155,8 @@ struct nextview4: View {
         Text("Tina's flip of the coin!")
             .font(.callout)
             .fontWeight(.bold)
-            .padding(60.0)
-            .background(.yellow)
+            .padding(1.0)
+            .background(.green)
         
         NavigationView {
                     VStack(spacing: 30) {
