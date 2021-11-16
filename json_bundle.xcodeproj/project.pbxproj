@@ -57,6 +57,7 @@
 				DF75D3242742225F00BDF746 /* data.json */,
 				DFF445352743041D00F230A3 /* user2.swift */,
 				DF75D2FE2741BF8F00BDF746 /* json_bundleApp.swift */,
+				DF75D3002741BF9000BDF746 /* Assets.xcassets */,
 				DF75D3202741C01400BDF746 /* data */,
 				DF75D31D2741BFA700BDF746 /* model */,
 				DF75D31C2741BF9E00BDF746 /* views */,
@@ -69,7 +70,6 @@
 		DF75D2FD2741BF8F00BDF746 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DF75D3002741BF9000BDF746 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

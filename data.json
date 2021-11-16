@@ -4,13 +4,15 @@
     "name": "Taylor Swift",
     "addr": "107 Ascot lane",
     "city": "Lafayette",
-    "state": "La"
+    "state": "La",
+    "imageName": "charleyrivers"
 },
 {
     "id": 2,
     "name": "Bob Swift",
     "addr": "108 Ascot lane",
     "city": "xLafayette",
-    "state": "Al"
+    "state": "Al",
+    "imageName": "tina"
 }
 ]
