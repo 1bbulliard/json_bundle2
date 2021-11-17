@@ -67,7 +67,7 @@ struct ContentView: View
             VStack(alignment: .leading)
                 {
                 Text(user.name)
-                        .font(.system(size: 10))
+                        .font(.system(size: 20))
                     Spacer()
                     Text(user.addr)
                         .font(.system(size: 10))
@@ -83,9 +83,10 @@ struct ContentView: View
                         user.image
                             .resizable()
                             .frame(width: 250, height: 250)
-                        Text("-------------------------")
-                            .bold()
-                            .font(.system(size: 16))
+                      //  Text("-------------------------")
+                      //      .bold()
+                       //     .font(.system(size: 16))
+                        Divider()
                     }
                     
                         }
