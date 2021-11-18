@@ -20,8 +20,8 @@ struct User:  Hashable,Codable, Identifiable
     var image: Image {
         Image(imageName)
     }
-    
-      }
+   
+}
 enum CodingKeys: String, CodingKey
 {
     case name
@@ -97,35 +97,39 @@ struct ContentView: View
   }
 }
 struct nextview2: View {
- //   @State private var usersx: User = users()
-    var body: some View {
-     
-        Text("list only name!")
-        
-            .font(.callout)
-            .fontWeight(.bold)
-            .padding(5.0)
-           .background(.green)
-        
-        
-        List{
-            ForEach(users) {user in
-                    Text(user.name)
-            }
-            // begin delete
-            .onDelete { indexSet in
-            for index in indexSet {
-                    users.remove(at: index)}}
-            // end delete
-            
-            .onMove (perform: move)
-            // begin move
-            // end move
-         //   .navigationBarItems(trailing: EditButton())
-        }}}
-func move(from source: IndexSet, to destination : Int) {
     
+    var body: some View {
+        NavigationView{
+            VStack (alignment: .leading){
+                // @State var user: user = users()
+                // im missing navigation view!!!! to make edit work
+                /*  Text("list only name!")
+                 
+                 .font(.callout)
+                 .fontWeight(.bold)
+                 .padding(5.0)
+                 .background(.green)*/
+                
+                
+                List{
+                    ForEach(users) {user in
+                        Text(user.name)
+                    }
+                    
+                    //  .onDelete { indexSet in for index in indexSet {users.remove(at: index)}}
+                    .onDelete(perform: delete)
+                    .onMove (perform: move)
+                    
+                }}
+        .navigationBarTitle("Listing just the name")
+        .navigationBarItems(trailing: EditButton())
+        }}}
+func move(from source: IndexSet, to destination : Int)
+{
     users.move(fromOffsets: source, toOffset: destination)
+}
+func delete(at offsets: IndexSet) {
+    users.remove(atOffsets: offsets)
 }
 struct nextview3: View {
    // var users : User
